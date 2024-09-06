@@ -9,6 +9,10 @@ from wasabi import msg
 from goldenverba.components.interfaces import Embedding
 from goldenverba.components.types import InputConfig
 from goldenverba.components.util import get_environment
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 
 class OpenAIEmbedder(Embedding):
